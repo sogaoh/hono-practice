@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    #image: my-app-20240404-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
